@@ -1,4 +1,3 @@
-//in client/src/App.js
 import axios from "axios";
 import { useState } from "react";
 import "./App.css";
@@ -14,7 +13,7 @@ const App = () => {
   const sendSearchRequest = () => {
     const results = {
       method: "GET",
-      url: "http://localhost:4000/results",
+      url: "http://localhost:3001/results",
       params: {
         type: chosenType,
         mag: chosenMag,
